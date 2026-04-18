@@ -1,10 +1,9 @@
-from flask import Flask
+import streamlit as st
+import mysql.connector
+import pandas as pd
+import matplotlib.pyplot as plt
+from datetime import datetime
 
-app = Flask(__name__)
+st.title("🎓 Examination Management System")
 
-@app.route('/')
-def home():
-    return "<h1>Examination Management System</h1><p>Project Started Successfully</p>"
-
-if __name__ == '__main__':
-    app.run(debug=True)
+st.write("Project Started Successfully 🚀")
